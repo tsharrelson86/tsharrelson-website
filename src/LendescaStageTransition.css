@@ -1,0 +1,54 @@
+.lendesca-case .ld-stage-transition {
+  --card-peek: 52px;
+  --card-gap: 14px;
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+.lendesca-case .ld-stage-card {
+  position: absolute;
+  inset: 0 0 auto;
+  height: calc(100% - var(--card-peek) - var(--card-gap));
+  background: #f4f4f4;
+  border-radius: 25px 0 17px 25px;
+  overflow: hidden;
+}
+.lendesca-case .ld-stage-card:first-child { height: 100%; }
+.lendesca-case .ld-card-body { display: flex; height: 100%; min-height: 0; }
+.lendesca-case .ld-card-body > .phx-content {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  animation: none;
+}
+.lendesca-case .ld-card-return {
+  position: absolute;
+  inset: auto 0 0;
+  height: var(--card-peek);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 25px;
+  border: 0;
+  background: #f4f4f4;
+  color: #4d4d4d;
+  font: 400 13px/1.4 'Albert Sans', Arial, sans-serif;
+  cursor: pointer;
+  visibility: hidden;
+}
+.lendesca-case .ld-card-return.is-visible { visibility: visible; }
+.lendesca-case .ld-card-return:disabled { cursor: default; }
+.lendesca-case .ld-card-return:focus-visible { outline-offset: -4px; }
+.lendesca-case .ld-stage-transition.is-moving .ld-stage-card { will-change: transform; pointer-events: none; }
+.lendesca-case .ld-stage-transition.is-moving .phx-content { overflow: hidden; }
+.lendesca-case .ld-card-body h3:focus { outline: none; }
+/* The source phone uses the form's Back control rather than a folded top strip. */
+.lendesca-case .phx-phone .ld-stage-transition { --card-peek: 0px; --card-gap: 0px; }
+.lendesca-case .phx-phone .ld-stage-card { border-radius: 23px 0 0; }
+.lendesca-case .phx-phone .ld-card-return { display: none; }

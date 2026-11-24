@@ -1,0 +1,24 @@
+.b-credit-visual{container-type:inline-size;aspect-ratio:660/420;display:grid;align-items:center}
+.b-credit-screen{color:#141413;background:#fff;border:1px solid #dedede;border-radius:8px;box-shadow:0 22px 42px #17282018;overflow:hidden;font:400 2.12cqw/1.4 CreditFigtree,Arial,sans-serif;letter-spacing:.015em;width:100%}
+.b-credit-screen *{box-sizing:border-box}
+.b-credit-header{display:flex;align-items:center;justify-content:space-between;gap:3cqw;padding:3.4cqw 3.6cqw 3cqw}
+.b-credit-header h4{font:600 3.25cqw/1.3 CreditFigtree,Arial,sans-serif;letter-spacing:0;margin:0;text-transform:none}
+.b-credit-header>span{font-size:1.9cqw;white-space:nowrap;color:#666}
+.b-credit-percentage{display:flex;align-items:center;gap:4cqw;padding:2.4cqw 3.6cqw 3cqw;border-bottom:1px solid #ddd;font-size:2cqw}
+.b-credit-percentage>span{border-bottom:1px dotted #8a8a8a;min-width:6.5cqw;text-align:right;padding:0 0 .5cqw}
+.b-credit-percentage>span>span{margin-left:1.5cqw}
+.b-credit-head,.b-credit-row{display:grid;grid-template-columns:minmax(0,1fr) 22% 20%}
+.b-credit-head{background:#f1f1f1;border-bottom:1px solid #ddd;color:#565656;font-size:1.85cqw;line-height:1.3}
+.b-credit-head>span{padding:1.8cqw 2.4cqw;text-align:right}
+.b-credit-head>span:first-child{text-align:left;padding-left:3.6cqw;align-self:center}
+.b-credit-row{border-bottom:1px solid #eee;min-height:13.5cqw}
+.b-credit-product{display:flex;align-items:center;gap:1.8cqw;padding:2.6cqw 2.4cqw 2.6cqw 3.6cqw;min-width:0}
+.b-credit-product>img{width:7cqw;height:7cqw;object-fit:contain;flex-shrink:0;border-radius:4px;background:#fafafa}
+.b-credit-product>span{font-size:2.1cqw;line-height:1.35}
+.b-credit-product small{display:block;margin-top:.5cqw;font-size:1.65cqw;color:#888}
+.b-credit-selected{display:flex;align-items:center;justify-content:flex-end;gap:.8cqw;padding:2cqw;background:#e9f6eb;border-bottom:1px solid #95d99f;font-variant-numeric:tabular-nums;font-size:2.2cqw;white-space:nowrap}
+.b-credit-selected>svg{width:2.2cqw;height:2.2cqw;flex-shrink:0;color:#008128}
+.b-credit-result{display:flex;align-items:center;justify-content:flex-end;gap:3cqw;padding:3.6cqw}
+.b-credit-result>span{font-weight:600;font-size:2.4cqw}
+.b-credit-result>strong{font-weight:600;font-size:4.6cqw;line-height:1.2;padding:1.2cqw 2cqw;border:1px solid #8a8a8a;border-radius:6px;font-variant-numeric:tabular-nums;min-width:20cqw}
+.home-graphic-art .b-credit-screen{transform:none;opacity:1;box-shadow:none}

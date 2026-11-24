@@ -1,0 +1,39 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+design-qa*.png
+headshot-review*.png
+
+# Keep local review iterations outside the hosted source snapshot.
+/*-review.html
+/section-*.png
+!/section-01-customer-card-user.png
+!/section-01-insights-panel-user.png
+!/section-02-deck-iq-assistant-user.png
+!/section-03-reasoning-full-user.png
+!/section-03-reasoning.png
+!/section-04-orders-elevation.png
+!/section-04-aged-orders-elevation.png
+!/section-04-order-health.png
+!/section-05-customer-insights-full.png
+/review-composites/publication/
+
+# Original flagship exports remain local; only approved selections are public.
+/flagship-review-assets/
+/src/flagshipGraphics.jsx
+/src/homepageFeatureReview.jsx
+/src/homepageFeatureReview.css
+/workflow-review/
+
+# Ignore dependency symlinks as well as directories.
+node_modules
+
+# Local secrets and developer state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.openai/*
+!.openai/hosting.json
